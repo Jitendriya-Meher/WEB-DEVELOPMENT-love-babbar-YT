@@ -1,0 +1,80 @@
+/* Media queries in CSS allow you to apply different styles based on certain conditions, such as the screen size, device orientation, or specific features supported by the device. Media queries are commonly used to create responsive designs that adapt to different devices and screen sizes. */
+
+
+
+/* Media Types */
+
+/* all	: Used for all media type devices */
+/* print :	Used for printers */
+/* screen :	Used for computer screens, tablets, smart-phones etc. */
+/* speech :	Used for screenreaders that "reads" the page out loud */
+
+
+
+/* media properites */
+
+/* max-width: Sets a maximum width for the targeted device. */
+/* min-width: Sets a minimum width for the targeted device. */
+/* max-height: Sets a maximum height for the targeted device. */
+/* min-height: Sets a minimum height for the targeted device. */
+/* orientation: Targets devices with a specific orientation (landscape or portrait). */
+/* resolution: Sets a minimum or maximum resolution for the targeted device. */
+
+
+.box1{
+    border: 2px solid black;
+    height: 200px;
+    background: rgb(153, 92, 133);
+    margin-bottom: 20px;
+}
+
+@media screen and ( min-width: 500px){
+    .box1{
+        background: red;
+    }
+}
+
+@media screen and ( min-width: 700px){
+    .box1{
+        background: purple;
+    }
+}
+
+
+.box2{
+    border: 2px solid black;
+    height: 200px;
+    background: green;
+}
+
+@media screen and ( max-width: 500px) and (min-width:200px){
+    .box2{
+        background: cyan;
+    }
+}
+
+.box{
+    display: flex;
+}
+
+.item{
+    height: 100px;
+    flex-grow: 1;
+}
+
+#item1, #item3{
+    background: yellowgreen;
+}
+
+#item2, #item4{
+    background: yellow;
+}
+
+@media screen and (max-width: 700px){
+    .box{
+        flex-direction: column;
+    }
+    .item{
+        width: 100%;
+    }
+}

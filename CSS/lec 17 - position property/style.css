@@ -1,0 +1,57 @@
+
+/* The CSS position property is used to control the positioning of elements on a webpage. It determines how an element is positioned in relation to its normal position in the document flow or in relation to its containing parent or viewport. */
+
+/* static (default): This is the default value where elements are positioned according to the normal flow of the document. They are not affected by the top, bottom, left, or right properties. */
+
+/* relative: When an element has position: relative, it is positioned relative to its normal position. You can use the top, bottom, left, and right properties to move the element from its original position while still maintaining the flow of surrounding elements. */
+
+/* absolute: With position: absolute, an element is positioned relative to its closest positioned ancestor. If no positioned ancestor exists, it is positioned relative to the initial containing block (typically the document body). You can use the top, bottom, left, and right properties to specify the exact position of the element. */
+
+/* fixed: This value positions an element relative to the viewport (the browser window) regardless of scrolling. A fixed element stays in the same position even when the page is scrolled. You can use the top, bottom, left, and right properties to define the element's position. */
+
+/* sticky: With position: sticky, an element is positioned based on the user's scroll position. It acts like relative positioning until a certain scroll threshold is reached, at which point it becomes fixed and remains in that position until the scrolling reaches another threshold. */
+/* A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). */
+
+/* initial:	Sets this property to its default value. */
+
+/* inherit:	Inherits this property from its parent element. */
+
+div{
+    border: 1px solid black;
+}
+
+img{
+    margin: 10px;
+}
+
+.container{
+    position: relative;
+    height: 3000px;
+    background: #3999;
+}
+
+.img2{
+    position: relative;
+    top: 500px;
+    left: 500px;
+}
+
+.img3{
+    position: absolute;
+    top: 200px;
+    right: 100px;
+}
+
+.img4{
+    position: fixed;
+}
+
+.img1{
+    position: sticky;
+    top: 100px;
+}
+
+.box{
+    height: 1000px;
+    background: #333;
+}

@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>flex box 1</title>
+
+    <style>
+
+        .container{
+            background: beige;
+            border: 5px solid black;
+
+            /* Flexbox is a CSS layout module that provides a flexible way to arrange and align elements within a container. It offers a powerful set of properties to create responsive and dynamic layouts. */
+
+            /* Flex Container: */
+            /* To create a flex container, you need to apply the display: flex; or display: inline-flex; property to the parent element. The flex value establishes a new flex formatting context for its children. */
+
+            /* Flex Items */
+            /* The child elements of a flex container are called flex items. By default, they will align horizontally in a single row. You can control how they behave using various Flexbox properties. */
+
+            display: flex;
+
+
+
+            /* flex-direction: Defines the main axis along which flex items are placed. */
+
+            /* row (default): Items are laid out horizontally from left to right. */
+            /* row-reverse: Items are laid out horizontally from right to left. */
+            /* column: Items are laid out vertically from top to bottom. */
+            /* column-reverse: Items are laid out vertically from bottom to top. */
+
+            flex-direction: row;
+
+
+
+            /* The flex-wrap property is used in Flexbox to control whether flex items should wrap onto multiple lines when they exceed the width of the flex container. It determines how flex items are distributed across one or multiple lines within the container. */
+
+            /* nowrap (default): This value specifies that flex items should remain in a single line and overflow the container if necessary. This means that flex items will not wrap onto multiple lines. */
+
+            /* wrap: This value indicates that flex items should wrap onto multiple lines if they exceed the width of the container. In this case, the flex items will be distributed across multiple lines, starting a new line when necessary. */
+
+            /* wrap-reverse: This value is similar to wrap, but the wrapping direction is reversed. Flex items will wrap onto multiple lines in reverse order, filling lines from bottom to top. */
+
+            flex-wrap: wrap;
+
+
+            
+            /* The justify-content property in CSS is used in Flexbox to control the alignment of flex items along the main axis of a flex container. It specifies how the available space is distributed between and around the flex items. */
+
+            /* flex-start (default): This value aligns the flex items to the start of the container. The items are packed against the start edge of the container, and any extra space is placed at the end. */
+
+            /* flex-end: This value aligns the flex items to the end of the container. The items are packed against the end edge of the container, and any extra space is placed at the start. */
+
+            /* center: This value aligns the flex items at the center of the container. The items are evenly distributed, with equal space before and after the first and last items. */
+
+            /* space-between: This value evenly distributes the flex items along the main axis. The first item is placed at the start of the container, the last item is placed at the end, and the remaining space is divided equally between the items. */
+
+            /* space-around: This value evenly distributes the flex items along the main axis, with equal space before, between, and after the items. The space between each item is twice as much as the space before and after the first and last items. */
+
+            /* space-evenly: This value evenly distributes the flex items along the main axis, with equal space before, between, and after the items. The space is distributed equally between all the items. */
+
+            justify-content: space-evenly;
+
+            height: 700px;
+
+            /* The align-items property in CSS is used in Flexbox to control the alignment of flex items along the cross axis of a flex container. It specifies how the flex items are aligned vertically when the flex-direction is set to row, and horizontally when flex-direction is set to column. */
+
+            /* stretch (default): This value stretches the flex items to fill the container along the cross axis. If no explicit height is set for the flex items, they will stretch to match the container's height. */
+
+            /* flex-start: This value aligns the flex items to the start of the container along the cross axis. */
+
+            /* flex-end: This value aligns the flex items to the end of the container along the cross axis. */
+
+            /* center: This value aligns the flex items at the center of the container along the cross axis. */
+
+            /* baseline: This value aligns the flex items such that their baselines align. The baseline is the imaginary line upon which text sits. */
+
+            align-items: center;
+
+
+            /* The align-content property in CSS is used in Flexbox to control the alignment of flex lines within a flex container when there is extra space available in the cross axis. It is applicable when flex items wrap onto multiple lines using the flex-wrap property. */
+
+            /* flex-start: This value aligns the flex lines at the start of the container. The lines are packed against the start edge of the container, and any extra space is placed at the end. */
+
+            /* flex-end: This value aligns the flex lines at the end of the container. The lines are packed against the end edge of the container, and any extra space is placed at the start. */
+
+            /* center: This value aligns the flex lines at the center of the container. The lines are evenly distributed with equal space before and after the first and last lines. */
+
+            /* space-between: This value evenly distributes the flex lines along the container's cross axis. The first line is placed at the start of the container, the last line is placed at the end, and the remaining space is divided equally between the lines. */
+
+            /* space-around: This value evenly distributes the flex lines along the container's cross axis, with equal space before, between, and after the lines. The space between each line is twice as much as the space before and after the first and last lines. */
+
+            /* stretch (default): This value stretches the flex lines to fill the container along the cross axis. If no explicit height is set for the flex container, the lines will stretch to match the container's height. */
+
+            align-content: center;
+
+
+
+            
+            /* The flex-flow property in CSS is a shorthand property that combines the flex-direction and flex-wrap properties into a single declaration. It allows you to specify both the direction of flex items and whether they should wrap onto multiple lines within a flex container. */
+
+            flex-flow: row nowrap;
+            
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 20px;
+        }
+
+        #box1{
+            background: aqua;
+
+            /* The order property in CSS is used in Flexbox to control the order in which flex items appear within a flex container. It allows you to change the visual order of flex items without modifying the source order of the HTML markup. */
+            /* The order property accepts an integer value that represents the order of a flex item. By default, flex items have an order value of 0, meaning they appear in the order they are defined in the HTML markup. */
+            /* You can assign different order values to flex items to change their display order. Negative values can also be used. */
+
+            order: 3;
+        }
+
+        #box2{
+            background: blue;
+
+            /* The align-self property in CSS is used within a Flexbox layout to control the alignment of a specific flex item along the cross-axis. It allows you to override the align-items property set on the flex container for that particular flex item. */
+
+            /* auto (default): The flex item inherits the align-items value from its parent flex container. */
+
+            /* flex-start: The flex item is aligned to the start of the cross-axis within the flex container. */
+
+            /* flex-end: The flex item is aligned to the end of the cross-axis within the flex container. */
+
+            /* center: The flex item is centered along the cross-axis within the flex container. */
+
+            /* baseline: The flex item is aligned based on the baseline of its content. */
+
+            /* stretch: The flex item is stretched to fill the cross-axis of the flex container. */
+
+            align-self: baseline;
+
+        }
+
+        #box3{
+            background: orange;
+
+            order: -3;
+
+            /* The flex-shrink property in CSS is used in Flexbox to control the ability of flex items to shrink when the available space in the flex container is limited. It specifies the flex shrink factor, which determines how much an item should shrink relative to other flex items. */
+            /* The flex-shrink property accepts a unitless number as its value. The default value is 1, indicating that all flex items can shrink equally. If a flex item has a flex-shrink value of 0, it will not shrink when there is insufficient space. */
+            /* The flex shrink factor determines the proportion by which a flex item shrinks compared to other items. For example, if one item has a flex-shrink value of 2 and another item has a flex-shrink value of 1, the first item will shrink twice as much as the second item when there is limited space. */
+
+            flex-shrink: 3;
+        }
+
+        #box4{
+            background: brown;
+
+            order: -1;
+
+            /* The flex-grow property in CSS is used in Flexbox to control the ability of flex items to grow and occupy available space within a flex container. It specifies the proportion by which flex items should grow relative to other items when there is extra space in the flex container. */
+            /* The flex-grow property accepts a unitless number as its value. By default, flex items have a flex-grow value of 0, indicating that they will not grow and will maintain their original size. */
+
+            flex-grow: 2;
+
+            /* In CSS Flexbox, the flex-basis property is used to set the initial size of a flex item along the main axis before any remaining space is distributed. It specifies the ideal size of a flex item before considering the flex-grow and flex-shrink properties. */
+
+            /* Length values: You can specify a fixed length value like pixels (px), percentages (%), or other valid CSS length units. This sets the initial size of the flex item to a specific length. */
+            flex-basis: 100px;
+
+            /* Content-based values: You can use content as the value to set the flex item's size based on its content. The flex item will expand or shrink to fit its content along the main axis. */
+            flex-basis: content;
+
+            /* auto (default): This value allows the flex item to grow and shrink based on the available space and the flex-grow and flex-shrink properties. */
+            flex-basis: auto;
+
+
+            /* The flex property in CSS is a shorthand property that combines the flex-grow, flex-shrink, and flex-basis properties into a single declaration. It allows you to specify the flexibility and sizing of a flex item within a flex container. */
+            flex: 1 1 auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box" id="box1">aa</div>
+        <div class="box" id="box2">bb</div>
+        <div class="box" id="box3">cc</div>
+        <div class="box" id="box4">dd</div>
+
+    </div>
+    
+</body>
+</html>

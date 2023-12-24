@@ -1,0 +1,68 @@
+/* The CSS display property is used to control how an element is rendered in the browser. It specifies the type of box used for an HTML element and influences the layout and visibility of the element. */
+
+/* The display property accepts various values, each determining how an element is displayed.  */
+
+/* In HTML, the default display property value is taken from the HTML specifications or from the browser/user default style sheet. */
+
+/* block: This value generates a block-level element, creating a line break before and after the element. Block-level elements occupy the entire width of their container and stack vertically. */
+
+/* inline: This value generates an inline-level element, allowing elements to flow within a line. Inline elements do not create line breaks and only occupy the space necessary for their content. */
+/* Any height and width properties will have no effect */
+
+/* inline -->> same line (jiksss) */
+/* block -->> new line  */
+
+/* inline-block: This value combines aspects of block and inline. It generates an inline-level element that can have a specified width and height, and elements with inline-block will respect top and bottom margins, but not left and right margins. */
+/* you can apply height and width values */
+
+/* none: This value hides the element from the layout entirely, as if it doesn't exist. The element is not rendered and doesn't take up any space on the page. This is commonly used for hiding elements dynamically using JavaScript. */
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    /* The box-sizing property in CSS is used to control how the total width and height of an element are calculated, taking into account the element's padding and border. By default, the width and height of an element are calculated based on its content box, which includes the content, padding, and border. */
+}
+
+div{
+
+    display: block;
+    /* display: inline; */
+    display: inline-block;
+    /* display: none; */
+
+    border: 2px solid red;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 50px;
+
+}
+
+a{
+    border: 2px solid saddlebrown;
+    padding: 10px;
+    margin: 10px;
+
+
+    /* The visibility property in CSS is used to control the visibility of an element on a webpage. It determines whether an element is visible or hidden while still occupying its space in the layout. */
+
+    visibility: hidden;
+    /* hidden: This value indicates that the element is hidden but still occupies its space in the layout. The element is not rendered, and it doesn't affect the positioning of other elements around it. */
+
+    
+    visibility: visible;
+    /* visible (default): This value indicates that the element is visible. It is rendered normally and displayed in the layout. */
+}
+
+span{
+
+    display: span;
+    display: block;
+    display: inline-block;
+
+    border: 2px solid green;
+    margin: 10px;
+    padding: 10px;
+}

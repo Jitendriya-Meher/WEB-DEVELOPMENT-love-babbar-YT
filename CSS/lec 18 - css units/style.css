@@ -1,0 +1,80 @@
+
+/* Absolute Lengths */
+/* The absolute length units are fixed and a length expressed in any of these will appear as exactly that size. */
+
+/* cm:  centimeters */
+/* mm:	millimeters
+in:	inches (1in = 96px = 2.54cm)
+px *:	pixels (1px = 1/96th of 1in)
+pt:	points (1pt = 1/72 of 1in)
+pc:	picas (1pc = 12 pt) */
+
+/* Relative Lengths */
+/* Relative length units specify a length relative to another length property. Relative length units scale better between different rendering medium. */
+
+/* Percentages (%): Percentages are relative units that are calculated based on the parent element's size. For example, setting an element's width to 50% means it will be half the width of its parent container. */
+
+/* Em (em): The em unit is relative to the font size of the element itself. For example, setting font-size: 1.5em on an element means the font size will be 1.5 times the font size of its parent element. It can also be used to specify lengths and sizes. */
+
+/* Rem (rem): The rem unit is similar to em, but it is relative to the root element's font size (typically the <html> element). This makes it more predictable and easier to manage when dealing with nested elements. */
+
+/* Viewport units:
+vw: Represents a percentage of the viewport's width. For example, 50vw means 50% of the viewport width.
+vh: Represents a percentage of the viewport's height. For example, 25vh means 25% of the viewport height.
+vmin: Represents the smaller value between viewport width and height.
+vmax: Represents the larger value between viewport width and height. */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    border: 2px solid black;
+
+    width: 50%;
+    width: 25%;
+
+    margin-bottom: 30px;
+}
+
+.parent{
+    background: tomato;
+    border: 2px solid red;
+
+    width: 50%;
+}
+
+.child{
+    background: aqua;
+    border: 2px solid green;
+
+    width: 20%;
+}
+
+.port{
+    border: 2px solid purple;
+    background: aquamarine;
+
+    width: 50vw;
+    height: 100vh;
+}
+
+.box1{
+    font-size: 50px;
+    border: 2px solid blue;
+}
+
+.container{
+    border: 2px solid blue;
+
+    font-size: 20px;
+    padding: 10px;
+}
+
+.child-container{
+    border: 2px solid brown;
+
+    font-size: 3em;
+    padding: 2em;   /* not working */
+}

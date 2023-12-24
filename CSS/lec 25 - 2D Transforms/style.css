@@ -1,0 +1,52 @@
+
+/* CSS provides a set of 2D transform properties that allow you to manipulate and animate elements in two-dimensional space. These properties can be used to rotate, scale, translate, and skew elements. Here are some common 2D transform properties: */
+
+/* transform: The main property used to apply 2D transforms. It can be used with various transform functions to achieve different effects. */
+
+/* rotate(angle): Rotates an element clockwise or counterclockwise by the specified angle. The angle can be specified in degrees (deg) or radians (rad) */
+
+/* scale(sx, sy): Scales an element by the specified factors in the X and Y directions. Values less than 1 scale down, while values greater than 1 scale up. */
+
+/* translate(tx, ty): Moves an element horizontally (tx) and vertically (ty) from its original position. Positive values move right and down, while negative values move left and up. */
+
+/* skew(ax, ay): Skews an element along the X and Y axes by the specified angles. Positive values tilt to the right and negative values tilt to the left. */
+
+/* transform-origin: Specifies the origin point around which a transform is applied. It defines the X and Y coordinates or predefined keywords like top, bottom, left, right, center, etc. */
+
+
+
+.box{
+    width: 400px;
+    height: 400px;
+    background: goldenrod;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 300px auto;
+
+    transition: transform .6s;
+}
+
+.box:hover p{
+    transform: rotate(45deg);
+    transform: translateX(60px);
+    transform: scale(1.4);
+    transform: skew(45deg);
+
+    transform: rotate(45deg) scale(1.7);
+}
+
+.box:hover{
+    transform: scale(1.5);
+
+    transform: scale(1.5) translate(0,-100px) rotate(-45deg);
+}
+
+.box p{
+    font-size: 45px;
+
+    transition: transform .6s;
+}

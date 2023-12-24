@@ -1,0 +1,100 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* variable in css */
+  --my_color : red;
+}
+
+.container{
+    margin: 0 auto;
+    background-color: beige;
+    height: 650px;
+    width: 500px;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: aquamarine;
+    width: 330px;
+    height: 330px;
+    border: 1px solid red;
+    margin: 5px;
+    padding: 5px;
+
+    box-shadow: -15px -15px 15px brown, 15px 15px 15px blue;
+
+    box-shadow: 20px 20px 50px 90px yellow ;
+
+    box-shadow: inset -15px -15px 15px brown, inset 15px 15px 15px blue;
+}
+
+/* Keyword values
+box-shadow: none;
+
+/offset-x | offset-y | color
+box-shadow: 60px -16px teal;
+
+offset-x | offset-y | blur-radius | color
+box-shadow: 10px 5px 5px black;
+
+offset-x | offset-y | blur-radius | spread-radius | color
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+inset | offset-x | offset-y | color
+box-shadow: inset 5em 1em gold;
+
+Any number of shadows, separated by commas
+box-shadow:
+  3px 3px red,
+  -1em 0 0.4em olive;
+
+Global values
+box-shadow: inherit;
+box-shadow: initial;
+box-shadow: revert;
+box-shadow: revert-layer;
+box-shadow: unset; */
+
+
+
+/* offset-x | offset-y | blur-radius | color */
+/* text-shadow: 1px 1px 2px black; */
+
+/* color | offset-x | offset-y | blur-radius */
+/* text-shadow: #fc0 1px 0 10px; */
+
+/* offset-x | offset-y | color */
+/* text-shadow: 5px 5px #558abb; */
+
+/* color | offset-x | offset-y */
+/* text-shadow: white 2px 5px; */
+
+/* offset-x | offset-y
+Use defaults for color and blur-radius
+text-shadow: 5px 10px;
+Global values
+text-shadow: inherit;
+text-shadow: initial;
+text-shadow: revert;
+text-shadow: revert-layer;
+*/
+
+
+.box h2{
+  font-size: 32px;
+  letter-spacing: 0.2rem;
+  font-family: cursive;
+  text-align: center;
+  color: var(--my_color);
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  text-shadow: 2px 2px 2px black, -2px -2px 2px yellow ;
+}

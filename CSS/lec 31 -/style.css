@@ -1,0 +1,23 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+    padding: 4rem;
+    display: grid;
+    gap: 1rem;
+    background-color: #582121;
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    justify-content: center;
+}
+
+.item{
+    border: 2px solid black;
+    background-color: rgb(8, 53, 38);
+    color: white;
+}

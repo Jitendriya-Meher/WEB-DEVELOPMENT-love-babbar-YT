@@ -1,0 +1,150 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1{
+    width: 360px;
+    height: 570px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.card1 img{
+    height: 57%;
+    border-radius: 10px;
+}
+
+.card1 h2{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.card1 p{
+    font-size: 1.3rem;
+}
+
+
+
+.card2{
+    height: 600px;
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.card2 img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 30%;
+}
+
+.text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 75%;
+    text-align: center;
+}
+
+.amount-box{
+    width: 80%;
+    height: 10%;
+    background: rgb(122, 122, 200);
+    border-radius: 20px;
+}
+
+.payment-button{
+    width: 80%;
+    height: 9%;
+    background-color: rgb(40, 40, 108);
+    color: white;
+    border-radius: 10px;
+    font-size: 1.1rem;
+
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+    transition: all .2s linear;
+}
+
+.payment-button:hover{
+    opacity: 0.7;
+}
+
+.cancel-box{
+    margin-top: 10px;
+}
+
+.cancel-box a{
+    text-decoration: none;
+    color: rgb(106, 92, 92);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.amount-box{
+    width: 80%;
+    height: 10%;
+    background-color: #00d4ff;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.amount-box .left-box{
+    height: 100%;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 15px;
+}
+
+.left-box .img-box{
+    height: 100%;
+    overflow: hidden;
+}
+
+.img-box img{
+    height: 100%;
+}
+
+.amount-box .right-box a{
+    text-decoration: none;
+}
+
+.text-amount{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
